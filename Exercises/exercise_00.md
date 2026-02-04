@@ -64,7 +64,7 @@ Before starting this workshop, ensure you have the following installed:
   - Visual Studio 2022 (17.10+) with Web and Cloud workload
   - Visual Studio Code with [C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
   - JetBrains Rider (2024.1+)
-- [ ] **Aspire workload** - See installation instructions below
+- [ ] **Aspire CLI** - `irm https://aspire.dev/install.ps1 | iex`
 
 ## Installation Instructions
 
