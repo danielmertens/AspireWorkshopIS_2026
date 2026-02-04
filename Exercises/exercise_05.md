@@ -38,6 +38,7 @@ To add a single transmitter to the project we can add it as a new project in our
 
 ```c#
 builder.AddProject<Projects.GhostTracker_Transmitter>("ghosttracker-transmitter")
+    .WithHttpEndpoint()
     .WithReference(ghostManagerApi)
     .WithReference(pathfinderApi)
     .WithEnvironment("GhostId", "1");
