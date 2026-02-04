@@ -17,7 +17,7 @@ If we run our project now, we will see that the Bff project appears in the dashb
 Now lets add our GhostsManager service and PathFinder service as well:
 
 ```c#
-builder.AddProject<Projects.GhostTracker_GhostsManager>("ghostmanagerapi");
+builder.AddProject<Projects.GhostTracker_GhostManager>("ghostmanagerapi");
 builder.AddProject<Projects.GhostTracker_PathFinderApi>("pathfinderapi");
 ```
 
