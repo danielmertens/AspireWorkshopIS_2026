@@ -46,7 +46,9 @@ The workshop is divided into steps, each building on the previous:
 4. Service discovery
 5. Running multiple instances
 6. Message queue integration
-7. Cloud deployment
+7. Interaction service
+8. Integration testing
+9. Cloud deployment
 
 Let's get started! 👻
 

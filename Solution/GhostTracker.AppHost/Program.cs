@@ -16,7 +16,7 @@ var bff = builder.AddProject<Projects.GhostTracker_Bff>("bff")
     .WithReference(ghostManagerApi)
     .WithReference(pathfinderApi);
 
-for (int i = 1; i < 4; i++)
+for (int i = 1; i < 9; i++)
 {
     builder.AddProject<Projects.GhostTracker_Transmitter>($"GhostTracker-transmitter-{i}")
         .WithHttpEndpoint(port: 9000 + i)
