@@ -24,7 +24,7 @@ aspire init
 The CLI will guide you through an interactive setup:
 1. Choose to add all existing projects to the orchestration
 2. Choose to add ServiceDefaults to all existing projects
-3. Select the latest .NET Aspire version (13.1.0)
+3. Select the latest .NET Aspire version (13.1.2)
 4. The tool will create:
    - `GhostTracker.AppHost` - The orchestration project
    - `GhostTracker.ServiceDefaults` - Shared service configurations
