@@ -74,3 +74,7 @@ After making these changes, run the application and verify everything works:
 
 For more details about Service Discovery in .NET Aspire, see the official documentation:
 - [Service Discovery in .NET Aspire](https://learn.microsoft.com/dotnet/aspire/service-discovery/overview)
+
+---
+
+[Next Exercise →](./exercise_05.md)

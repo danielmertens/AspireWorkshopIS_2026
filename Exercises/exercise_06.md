@@ -125,3 +125,7 @@ Once this is done, run the application and verify:
 ## Additional Resources
 
 For more information, see the official documentation: [Aspire RabbitMQ Integration](https://aspire.dev/integrations/messaging/rabbitmq/)
+
+---
+
+[Next Exercise →](./exercise_07.md)

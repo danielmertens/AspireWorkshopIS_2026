@@ -85,3 +85,7 @@ You've now configured all your .NET services with production-ready observability
 **Note:** There are no default ServiceDefaults for the React project. ServiceDefaults are only for .NET services, not frontend applications.
 
 > **Learn More:** For detailed information about service defaults, see the [official Aspire documentation](https://aspire.dev/fundamentals/service-defaults/).
+
+---
+
+[Next Exercise →](./exercise_04.md)

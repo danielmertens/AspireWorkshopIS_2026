@@ -73,3 +73,7 @@ After running the application, you can verify everything is working:
 3. **Open the React frontend** - you should see 5 ghosts moving on the map
 
 This demonstrates one of Aspire's key advantages: easily running multiple instances of the same service during development, something that would be complex to set up with traditional approaches.
+
+---
+
+[Next Exercise →](./exercise_06.md)

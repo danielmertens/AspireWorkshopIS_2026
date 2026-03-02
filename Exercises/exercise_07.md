@@ -322,3 +322,7 @@ Try extending the interactions further:
 3. **Add validation**: Check if the transmitter is already online/offline before executing
 4. **Add custom icons**: Enhance the visual appearance of your commands
 5. **Create a wizard**: Use multiple input prompts to create a multi-step configuration wizard
+
+---
+
+[Next Exercise →](./exercise_08.md)

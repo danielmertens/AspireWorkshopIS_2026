@@ -68,3 +68,7 @@ You can also use the `Aspire add` command to search the aspire library through t
 When adding dependencies like RabbitMQ of SQLServer Aspire is able to deploy these dependencies itself, either by spinning up a docker image or by connecting to a configured existing instance. This for both the local development as deployment on Azure or other cloud providers.
 
 Aspire differentiates Aspire packages in two categories: hosting and integration packages. Hosting packages are meant to be added to your AppHost project. They contain the code to setup an integration when building the application. Hosting packages typically start with `Aspire.Hosting.{packageName}`. Integration packages are opinionated implementations of how to integrate with hosted services. These integrations are typically pre-configured to setup health endpoint checks and structured logging for your integrations.
+
+---
+
+[Next Exercise →](./exercise_03.md)

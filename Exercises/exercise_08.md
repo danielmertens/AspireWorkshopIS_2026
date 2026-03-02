@@ -397,3 +397,7 @@ In this exercise, you learned how to:
 - ✅ Follow best practices for distributed application testing
 
 With these testing capabilities, you can ensure your distributed application works correctly across service boundaries and maintains reliability through continuous integration and deployment.
+
+---
+
+[Next Exercise →](./exercise_09.md)
