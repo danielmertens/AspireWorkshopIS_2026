@@ -74,6 +74,11 @@ After running the application, you can verify everything is working:
 
 This demonstrates one of Aspire's key advantages: easily running multiple instances of the same service during development, something that would be complex to set up with traditional approaches.
 
+## Additional Resources
+
+- [External Parameters](https://aspire.dev/fundamentals/external-parameters)
+- [Resource model](https://aspire.dev/architecture/resource-model)
+
 ---
 
 [Next Exercise →](./exercise_06.md)

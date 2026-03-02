@@ -124,7 +124,10 @@ Once this is done, run the application and verify:
 
 ## Additional Resources
 
-For more information, see the official documentation: [Aspire RabbitMQ Integration](https://aspire.dev/integrations/messaging/rabbitmq/)
+- [Aspire RabbitMQ Integration](https://aspire.dev/integrations/messaging/rabbitmq/)
+- [.NET Aspire Integrations Overview](https://aspire.dev/integrations/overview/)
+- [Container Resources in .NET Aspire](https://aspire.dev/app-host/withdockerfile/)
+- [Persistent Container Lifetime](https://aspire.dev/app-host/persistent-containers)
 
 ---
 

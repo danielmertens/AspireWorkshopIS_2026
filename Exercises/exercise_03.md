@@ -86,6 +86,11 @@ You've now configured all your .NET services with production-ready observability
 
 > **Learn More:** For detailed information about service defaults, see the [official Aspire documentation](https://aspire.dev/fundamentals/service-defaults/).
 
+## Additional Resources
+
+- [OpenTelemetry in .NET Aspire](https://aspire.dev/fundamentals/telemetry/)
+- [Health Checks in .NET Aspire](https://aspire.dev/fundamentals/health-checks)
+
 ---
 
 [Next Exercise →](./exercise_04.md)

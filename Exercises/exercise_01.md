@@ -68,6 +68,12 @@ Our Aspire application will be started and a browser will open with the Aspire d
 
 The dashboard provides a centralized view of all your services, resources, and telemetry. At this point it's empty because we haven't added any services to the orchestration yet - we'll do that in the next steps.
 
+## Additional Resources
+
+- [Aspire first app](https://aspire.dev/get-started/first-app/?lang=csharp)
+- [App Host Overview](https://aspire.dev/app-host/configuration/)
+- [.NET Aspire Dashboard](https://aspire.dev/dashboard/overview/)
+
 ---
 
 [Next Exercise →](./exercise_02.md)

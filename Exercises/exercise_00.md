@@ -82,6 +82,11 @@ If you are using VS Code to develop, make sure to install the [C# Dev Kit extens
 
 If you are using Rider, install the [.NET Aspire plugin](https://www.jetbrains.com/help/rider/NET_Aspire.html) from JetBrains Marketplace. The plugin provides full support for .NET Aspire development and you don't need to install the Aspire workload separately.
 
+## Additional Resources
+
+- [What is Aspire?](https://aspire.dev/get-started/what-is-aspire)
+- [Set Up Your Aspire Environment](https://aspire.dev/get-started/prerequisites)
+
 ---
 
 [Next Exercise →](./exercise_01.md)

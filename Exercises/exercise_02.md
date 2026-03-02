@@ -69,6 +69,11 @@ When adding dependencies like RabbitMQ of SQLServer Aspire is able to deploy the
 
 Aspire differentiates Aspire packages in two categories: hosting and integration packages. Hosting packages are meant to be added to your AppHost project. They contain the code to setup an integration when building the application. Hosting packages typically start with `Aspire.Hosting.{packageName}`. Integration packages are opinionated implementations of how to integrate with hosted services. These integrations are typically pre-configured to setup health endpoint checks and structured logging for your integrations.
 
+## Additional Resources
+
+- [Javascript Integration](https://aspire.dev/integrations/frameworks/javascript)
+- [.NET Aspire Integrations Overview](https://aspire.dev/integrations/overview/)
+
 ---
 
 [Next Exercise →](./exercise_03.md)

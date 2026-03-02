@@ -70,10 +70,10 @@ After making these changes, run the application and verify everything works:
 
 💡 **Why this matters:** Aspire assigns random available ports each time the application starts, so hardcoded ports won't work reliably across restarts. Service Discovery solves this by always using the current, correct endpoint.
 
-## Learn More
+## Additional Resources
 
-For more details about Service Discovery in .NET Aspire, see the official documentation:
 - [Service Discovery in .NET Aspire](https://learn.microsoft.com/dotnet/aspire/service-discovery/overview)
+- [Service Discovery Overview](https://aspire.dev/fundamentals/service-discovery/)
 
 ---
 
