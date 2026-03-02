@@ -54,6 +54,7 @@ We can simply create a loop in our AppHost and create multiple transmitters:
 for (int i = 1; i < 6; i++)
 {
     builder.AddProject<Projects.GhostTracker_Transmitter>($"ghosttracker-transmitter-{i}")
+        .WithHttpEndpoint()
         .WithReference(ghostManagerApi)
         .WithReference(pathfinderApi)
         .WithEnvironment("GhostId", i.ToString());

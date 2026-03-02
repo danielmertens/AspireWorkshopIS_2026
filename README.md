@@ -49,6 +49,7 @@ Before starting, ensure you have:
 
 3. **Choose your path**
    - Work in the `Starter/` folder to follow along with the exercises
+   - Use a pre-built checkpoint folder (`Starter-03`, `Starter-06`) to jump ahead to a specific exercise
    - Reference the `Solution/` folder if you get stuck or want to see the completed code
 
 ## Workshop Structure
@@ -73,7 +74,9 @@ AspireWorkshop/
 ├── Exercises/            # Workshop exercises and images
 │   ├── exercise_*.md     # Step-by-step exercise instructions
 │   └── Images/           # Diagrams and screenshots
-├── Starter/              # Starting point for the workshop
+├── Starter/              # Starting point – begin here for exercise 01
+├── Starter-03/           # Checkpoint – begin here for exercise 03 (exercises 01-02 completed)
+├── Starter-06/           # Checkpoint – begin here for exercise 06 (exercises 01-05 completed)
 └── Solution/             # Complete solution for reference
 ```
 
