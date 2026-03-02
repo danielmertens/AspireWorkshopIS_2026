@@ -32,7 +32,7 @@ namespace GhostTracker.Transmitter.RabbitMQ.Publishers
     public class LocationEvent
     {
         public int GhostId { get; set; }
-        public Coordinate Coordinate { get; set; }
-        public Heading Heading { get; set; }
+        public required Coordinate Coordinate { get; set; }
+        public required Heading Heading { get; set; }
     }
 }

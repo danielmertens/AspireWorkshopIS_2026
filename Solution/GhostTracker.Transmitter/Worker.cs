@@ -55,7 +55,7 @@ public class Worker : BackgroundService
         // Acquire semaphore to pause the worker
         await _pauseSemaphore.WaitAsync();
         _isRunning = false;
-        _transmitter.TakeOffline(_ghostContext.GhostId);
+        await _transmitter.TakeOffline(_ghostContext.GhostId);
         
         _logger.LogInformation("Worker stopped.");
         
@@ -82,7 +82,7 @@ public class Worker : BackgroundService
     {
         if (_isRunning)
         {
-            _transmitter.TakeOffline(_ghostContext.GhostId);
+            await _transmitter.TakeOffline(_ghostContext.GhostId);
         }
         await base.StopAsync(cancellationToken);
     }

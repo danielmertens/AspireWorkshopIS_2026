@@ -70,7 +70,7 @@ public class GhostLocation
     public int Id { get; set; }
     public required Coordinate Coordinate { get; set; }
     public Coordinate[] Line { get; set; } = [];
-    public Heading Heading { get; set; }
+    public required Heading Heading { get; set; }
 }
 
 public class Coordinate

@@ -18,12 +18,12 @@ public record GhostSummary(int Id, string Name, string Type);
 public record Ghost
 {
     public int Id { get; init; }
-    public string Name { get; init; }
-    public string Type { get; init; }
-    public int Age { get; set; }
-    public DateTime DateOfDead { get; set; }
-    public string HauntLocation { get; set; }
-    public string Appearance { get; set; }
-    public int DangerLevel { get; set; }
-    public string Abilities { get; set; }
+    public required string Name { get; init; }
+    public required string Type { get; init; }
+    public required int Age { get; init; }
+    public required DateTime DateOfDead { get; init; }
+    public required string HauntLocation { get; init; }
+    public required string Appearance { get; init; }
+    public required int DangerLevel { get; init; }
+    public required string Abilities { get; init; }
 }

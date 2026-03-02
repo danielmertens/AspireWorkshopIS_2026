@@ -38,6 +38,6 @@ app.Run();
 public class LocationDto
 {
     public int ghostId { get; set; }
-    public Coordinate Coordinate { get; set; }
-    public Heading Heading { get; set; }
+    public required Coordinate Coordinate { get; set; }
+    public required Heading Heading { get; set; }
 }

@@ -37,8 +37,8 @@ namespace GhostTracker.PathFinderApi.Services
 
                 using(var scope = _serviceProvider.CreateScope())
                 {
-                    var pathfinderService = scope.ServiceProvider.GetService<IPathFinderService>();
-                    pathfinderService.AddGhostCoordinate(data.Message.GhostId, data.Message.Coordinate, data.Message.Heading);
+                    var pathfinderService = scope.ServiceProvider.GetRequiredService<IPathFinderService>();
+                    pathfinderService.AddGhostCoordinate(data.Message!.GhostId, data.Message!.Coordinate, data.Message!.Heading);
                 }
                 
                 await Task.CompletedTask;
@@ -60,7 +60,7 @@ namespace GhostTracker.PathFinderApi.Services
     public class LocationEvent
     {
         public int GhostId { get; set; }
-        public Coordinate Coordinate { get; set; }
-        public Heading Heading { get; set; }
+        public required Coordinate Coordinate { get; set; }
+        public required Heading Heading { get; set; }
     }
 }

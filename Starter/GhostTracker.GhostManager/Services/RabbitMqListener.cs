@@ -40,8 +40,8 @@
 
 //                 using(var scope = _serviceProvider.CreateScope())
 //                 {
-//                     var commandService = scope.ServiceProvider.GetService<IGhostCommandService>();
-//                     commandService.SetGhostStatus(data.Message.GhostId, data.Message.Online);
+//                     var commandService = scope.ServiceProvider.GetRequiredService<IGhostCommandService>();
+//                     commandService.SetGhostStatus(data.Message!.GhostId, data.Message!.Online);
 //                 }
                 
 //                 await Task.CompletedTask;

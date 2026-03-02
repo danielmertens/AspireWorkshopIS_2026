@@ -40,6 +40,8 @@ public class FakeMessageTransmitter : ITransmitter
 
     public async Task TransmitLocation(int ghostId)
     {
+        if (!_transmitterInitialized) return;
+
         GhostLocation newLocation;
         if (!_memory.Any())
         {
@@ -67,7 +69,7 @@ public class FakeMessageTransmitter : ITransmitter
             var newY = (int)(location.Coordinate.Y + vect.Y * SPEED);
 
             if (newX > 0 && newY > 0
-                && newX < _mapMask.Width && newY < _mapMask.Height
+                && newX < _mapMask!.Width && newY < _mapMask!.Height
                 && _mapMask[newX, newY] == Rgba32.ParseHex("000000"))
             {
                 return new GhostLocation
@@ -83,15 +85,15 @@ public class FakeMessageTransmitter : ITransmitter
     {
         while (true)
         {
-            var x = Random.Shared.Next(SPAWN_EDGEOFFSET_WIDTH, _mapMask.Width - (SPAWN_EDGEOFFSET_WIDTH * 2));
-            var y = Random.Shared.Next(SPAWN_EDGEOFFSET_HEIGHT, _mapMask.Height - (SPAWN_EDGEOFFSET_HEIGHT * 2));
+            var x = Random.Shared.Next(SPAWN_EDGEOFFSET_WIDTH, _mapMask!.Width - (SPAWN_EDGEOFFSET_WIDTH * 2));
+            var y = Random.Shared.Next(SPAWN_EDGEOFFSET_HEIGHT, _mapMask!.Height - (SPAWN_EDGEOFFSET_HEIGHT * 2));
 
             var vect = new Vector2(
                 (float)(Random.Shared.NextDouble() * 2 - 1),
                 (float)(Random.Shared.NextDouble() * 2 - 1));
             vect = Vector2.Normalize(vect);
 
-            var color = _mapMask[x, y];
+            var color = _mapMask![x, y];
             if (color == Rgba32.ParseHex("000000"))
             {
                 return new GhostLocation()
