@@ -83,12 +83,12 @@ The same needs to be done for the **GhostManager** and **PathFinder** projects.
    dotnet add package Aspire.RabbitMQ.Client
    ```
 
-2. In the AppHost, add references to RabbitMQ:
+2. In the AppHost, add references to RabbitMQ (**These resources already exist!**):
    ```csharp
-   builder.AddProject<Projects.GhostTracker_GhostManager>("ghosttracker-ghostmanager")
+   builder.AddProject<Projects.GhostTracker_GhostManager>("ghostmanagerapi")
        .WithReference(rabbitmq);
    
-   builder.AddProject<Projects.GhostTracker_PathFinderApi>("ghosttracker-pathfinderapi")
+   builder.AddProject<Projects.GhostTracker_PathFinderApi>("pathfinderapi")
        .WithReference(rabbitmq);
    ```
 
@@ -117,7 +117,7 @@ Once this is done, run the application and verify:
 1. **Check the Dashboard** - You should see a new "messaging" resource with RabbitMQ
 2. **RabbitMQ Management UI**:
    - Click the link to the RabbitMQ management interface in the dashboard
-   - Login with username: `guest`, password: `guest`
+   - Login with username: `guest`, password: The password can be found in the environment variables of your rabbitMQ resource in the dashboard. The hosting package makes this secure by default. 
    - Navigate to the **Queues** tab
    - You should see queues with messages being processed
 3. **React Frontend** - Verify that ghosts from both the HTTP transmitter and RabbitMQ transmitter are appearing

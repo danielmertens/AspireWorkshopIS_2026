@@ -15,6 +15,7 @@ With Service Discovery we can make this a lot easier by using logical service na
 To start we need to tell Aspire and Service Discovery that the Bff needs a reference to the manager and pathfinder service. This can be configured in the AppHost as follows:
 
 ```c#
+// Update existing code
 var ghostManagerApi = builder.AddProject<Projects.GhostTracker_GhostManager>("ghostmanagerapi");
 var pathfinderApi = builder.AddProject<Projects.GhostTracker_PathFinderApi>("pathfinderapi");
 

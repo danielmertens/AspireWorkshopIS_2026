@@ -22,6 +22,10 @@ builder.Services.AddHttpClient<PathFinderApiClient>(static client => client.Base
 The last thing we need to setup in this service is specifying the GhostId. Any value from 1 to 10 would work here since those are the id's known by our manager. We would however like to have some control over which ghost our transmitter is tracking from our AppHost. Therefore we are going to read the `GhostId` from our environment variables as follows:
 
 ```c#
+// REPLACE
+builder.Services.AddSingleton((ctx) => new GhostContext { GhostId = 1});
+
+// Add the following code instead
 builder.Services.AddSingleton((provider) =>
 {
     var configuration = provider.GetRequiredService<IConfiguration>();
